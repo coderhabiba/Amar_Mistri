@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: mytheme --default;
+}
+
+@plugin "daisyui/theme" {
+  name: "mytheme";
+  default: true;
+  --color-primary: #EE800F;
+  --color-secondary: #253250;
+  --color-accent: #37cdbe;
+  --color-neutral: #3d4451;
+  --color-base-100: #ffffff;
+}
+
+/* Automatically apply Bangla font when html lang is 'bn' */
+html[lang="bn"] {
+  font-family: 'Hind Siliguri', sans-serif !important;
+}
+
+/* Automatically apply English font when html lang is 'en' */
+html[lang="en"] {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Leaflet map styles */
+@import 'leaflet/dist/leaflet.css';

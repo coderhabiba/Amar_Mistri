@@ -1,0 +1,139 @@
+{
+  "electricalElectronics": {
+    "category": {
+      "en": "Electrical & Electronics",
+      "bn": "ইলেকট্রিক্যাল ও ইলেকট্রনিক্স"
+    },
+    "services": [
+      { "en": "Electrician", "bn": "ইলেকট্রিশিয়ান" },
+      { "en": "Electrical Technician", "bn": "ইলেকট্রিক্যাল টেকনিশিয়ান" },
+      { "en": "Electronics Technician", "bn": "ইলেকট্রনিক্স টেকনিশিয়ান" },
+      { "en": "Substation Technician", "bn": "সাবস্টেশন টেকনিশিয়ান" },
+      { "en": "Generator Technician", "bn": "জেনারেটর টেকনিশিয়ান" },
+      { "en": "Solar Technician", "bn": "সোলার টেকনিশিয়ান" },
+      { "en": "Battery Technician", "bn": "ব্যাটারি টেকনিশিয়ান" },
+      { "en": "Inverter Technician", "bn": "ইনভার্টার টেকনিশিয়ান" },
+      { "en": "PLC Technician", "bn": "পিএলসি টেকনিশিয়ান" },
+      { "en": "Instrumentation Technician", "bn": "ইনস্ট্রুমেন্টেশন টেকনিশিয়ান" },
+      { "en": "Transformer Technician", "bn": "ট্রান্সফরমার টেকনিশিয়ান" },
+      { "en": "Control Panel Technician", "bn": "কন্ট্রোল প্যানেল টেকনিশিয়ান" }
+    ]
+  },
+  "mechanicalAutomobile": {
+    "category": {
+      "en": "Mechanical & Automobile",
+      "bn": "মেকানিক্যাল ও অটোমোবাইল"
+    },
+    "services": [
+      { "en": "Mechanical Technician", "bn": "মেকানিক্যাল টেকনিশিয়ান" },
+      { "en": "Automobile Technician", "bn": "অটোমোবাইল টেকনিশিয়ান" },
+      { "en": "Car Mechanic", "bn": "গাড়ি মেকানিক" },
+      { "en": "Motorcycle Mechanic", "bn": "মোটরসাইকেল মেকানিক" },
+      { "en": "Engine Technician", "bn": "ইঞ্জিন টেকনিশিয়ান" },
+      { "en": "CNC Technician", "bn": "সিএনসি টেকনিশিয়ান" },
+      { "en": "Fitter Technician", "bn": "ফিটার টেকনিশিয়ান" },
+      { "en": "Welding Technician", "bn": "ওয়েল্ডিং টেকনিশিয়ান" },
+      { "en": "Lathe Machine Technician", "bn": "লেদ মেশিন টেকনিশিয়ান" },
+      { "en": "Hydraulic Technician", "bn": "হাইড্রোলিক টেকনিশিয়ান" },
+      { "en": "Pump Technician", "bn": "পাম্প টেকনিশিয়ান" }
+    ]
+  },
+  "itComputerNetwork": {
+    "category": {
+      "en": "IT, Computer & Network",
+      "bn": "কম্পিউটার ও আইটি সাপোর্ট"
+    },
+    "services": [
+      { "en": "Computer Technician", "bn": "কম্পিউটার টেকনিশিয়ান" },
+      { "en": "IT Support Technician", "bn": "আইটি সাপোর্ট টেকনিশিয়ান" },
+      { "en": "Network Technician", "bn": "নেটওয়ার্ক টেকনিশিয়ান" },
+      { "en": "Hardware Technician", "bn": "হার্ডওয়্যার টেকনিশিয়ান" },
+      { "en": "Software Engineer", "bn": "সফটওয়্যার ইঞ্জিনিয়ার" },
+      { "en": "Server Technician", "bn": "সার্ভার টেকনিশিয়ান" },
+      { "en": "Cyber Security Technician", "bn": "সাইবার সিকিউরিটি টেকনিশিয়ান" },
+      { "en": "CCTV Technician", "bn": "সিসিটিভি টেকনিশিয়ান" },
+      { "en": "Printer Technician", "bn": "প্রিন্টার টেকনিশিয়ান" },
+      { "en": "Mobile Phone Technician", "bn": "মোবাইল ফোন টেকনিশিয়ান" },
+      { "en": "Laptop Technician", "bn": "ল্যাপটপ টেকনিশিয়ান" }
+    ]
+  },
+  "constructionCivil": {
+    "category": {
+      "en": "Construction & Civil",
+      "bn": "নির্মাণ ও সিভিল ওয়ার্ক"
+    },
+    "services": [
+      { "en": "Civil Technician", "bn": "সিভিল টেকনিশিয়ান" },
+      { "en": "Surveyor", "bn": "সার্ভেয়ার" },
+      { "en": "Construction Technician", "bn": "নির্মাণ টেকনিশিয়ান" },
+      { "en": "Sanitary Technician", "bn": "স্যানিটারি টেকনিশিয়ান" },
+      { "en": "Plumber", "bn": "প্লাম্বার" },
+      { "en": "Tiles Mason", "bn": "টাইলস মিস্ত্রী" },
+      { "en": "Painter / Color Mistry", "bn": "পেইন্টার / রং মিস্ত্রী" },
+      { "en": "Steel Fixer", "bn": "স্টিল ফিক্সার" },
+      { "en": "Mason", "bn": "রাজমিস্ত্রি" },
+      { "en": "Carpenter", "bn": "কাঠমিস্ত্রি" }
+    ]
+  },
+  "hvacHomeAppliances": {
+    "category": {
+      "en": "HVAC & Home Appliances",
+      "bn": "হোম অ্যাপ্লায়েন্স ও এসি"
+    },
+    "services": [
+      { "en": "AC Technician", "bn": "এসি টেকনিশিয়ান" },
+      { "en": "HVAC Technician", "bn": "এইচভিএসি টেকনিশিয়ান" },
+      { "en": "Refrigerator Technician", "bn": "ফ্রিজ/রেফ্রিজারেশন টেকনিশিয়ান" },
+      { "en": "Cold Storage Technician", "bn": "কোল্ড স্টোরেজ টেকনিশিয়ান" },
+      { "en": "Washing Machine Technician", "bn": "ওয়াশিং মেশিন টেকনিশিয়ান" },
+      { "en": "TV Technician", "bn": "টিভি টেকনিশিয়ান" },
+      { "en": "Water Motor Technician", "bn": "পানির মোটর টেকনিশিয়ান" }
+    ]
+  },
+  "medicalLaboratory": {
+    "category": {
+      "en": "Medical & Laboratory",
+      "bn": "মেডিকেল ও ল্যাব টেকনিক"
+    },
+    "services": [
+      { "en": "Laboratory Technician", "bn": "ল্যাব টেকনিশিয়ান" },
+      { "en": "Medical Technician", "bn": "মেডিকেল টেকনিশিয়ান" },
+      { "en": "X-Ray Technician", "bn": "এক্স-রে টেকনিশিয়ান" },
+      { "en": "Dental Technician", "bn": "ডেন্টাল টেকনিশিয়ান" },
+      { "en": "Operation Theatre Technician", "bn": "অপারেশন থিয়েটার টেকনিশিয়ান" },
+      { "en": "Dialysis Technician", "bn": "ডায়ালাইসিস টেকনিশিয়ান" },
+      { "en": "Ultrasonography Technician", "bn": "আল্ট্রাসনোগ্রাফি টেকনিশিয়ান" }
+    ]
+  },
+  "telecomMedia": {
+    "category": {
+      "en": "Telecom & Media",
+      "bn": "টেলিকম ও মিডিয়া সাপোর্ট"
+    },
+    "services": [
+      { "en": "Telecom Technician", "bn": "টেলিকম টেকনিশিয়ান" },
+      { "en": "Fiber Optic Technician", "bn": "ফাইবার অপটিক টেকনিশিয়ান" },
+      { "en": "Broadband Technician", "bn": "ব্রডব্যান্ড টেকনিশিয়ান" },
+      { "en": "Sound Technician", "bn": "সাউন্ড টেকনিশিয়ান" },
+      { "en": "Camera Technician", "bn": "ক্যামেরা টেকনিশিয়ান" },
+      { "en": "Video Editor", "bn": "ভিডিও এডিটর" }
+    ]
+  },
+  "industrialAutomation": {
+    "category": {
+      "en": "Industrial & Automation",
+      "bn": "ইন্ডাস্ট্রিয়াল ও অটোমেশন"
+    },
+    "services": [
+      { "en": "Machine Operator Technician", "bn": "মেশিন অপারেটর টেকনিশিয়ান" },
+      { "en": "Garments Technician", "bn": "গার্মেন্টস টেকনিশিয়ান" },
+      { "en": "Textile Technician", "bn": "টেক্সটাইল টেকনিশিয়ান" },
+      { "en": "Lift Technician", "bn": "লিফট টেকনিশিয়ান" },
+      { "en": "Escalator Technician", "bn": "এস্কেলেটর টেকনিশিয়ান" },
+      { "en": "Drone Technician", "bn": "ড্রোন টেকনিশিয়ান" },
+      { "en": "Robotics Technician", "bn": "রোবোটিক্স টেকনিশিয়ান" },
+      { "en": "Automation Technician", "bn": "অটোমেশন টেকনিশিয়ান" },
+      { "en": "Smart Home Technician", "bn": "স্মার্ট হোম টেকনিশিয়ান" }
+    ]
+  }
+}
