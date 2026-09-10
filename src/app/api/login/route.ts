@@ -60,11 +60,14 @@ export async function POST(request: NextRequest) {
 
     const targetCollection = role === 'mistri' ? 'mechanics' : 'users';
 
-    // Find mistri/user by Email OR Phone
+    // Find mistri/user by Email, Phone, OR MistriId/ReferCode
+    const identifierUpper = identifier.trim().toUpperCase();
     const mistriData: any = await db.collection(targetCollection).findOne({
       $or: [
         { email: identifier.toLowerCase().trim() },
         { phone: identifier.trim() },
+        { mistriId: identifierUpper },
+        { referCode: identifierUpper },
       ],
     });
 

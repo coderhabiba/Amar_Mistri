@@ -200,7 +200,7 @@ const Footer = () => {
               <div className="w-8 h-8 rounded-lg bg-slate-950 border border-slate-700 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 shadow-md">
                 <FiMapPin className="text-sm" />
               </div>
-              <span className="leading-relaxed text-slate-200 flex-1 hover:text-primary transition-colors break-all">
+              <span className="leading-relaxed text-slate-200 flex-1 hover:text-primary transition-colors">
                 {FOOTER_DATA.address[currentLang]}
               </span>
             </li>

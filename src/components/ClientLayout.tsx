@@ -4,6 +4,7 @@ import React, { useEffect, useState, Suspense } from 'react';
 import { usePathname } from 'next/navigation';
 import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
+import FloatingSocial from './FloatingSocial/FloatingSocial';
 import { Toaster } from 'react-hot-toast';
 import '@/lib/i18n';
 
@@ -31,6 +32,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
         </Suspense>
       </main>
       {!isDashboard && <Footer />}
+      {!isDashboard && <FloatingSocial />}
       <Toaster position="top-center" reverseOrder={false} />
     </div>
   );

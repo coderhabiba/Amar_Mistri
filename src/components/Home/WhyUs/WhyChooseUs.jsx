@@ -87,7 +87,7 @@ const WhyChooseUs = () => {
         className="absolute top-[-80px] left-[-80px] w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{
           background:
-            'radial-gradient(circle, rgba(59,130,246,0.09) 0%, transparent 70%)',
+            'radial-gradient(circle, rgba(241,142,50,0.09) 0%, transparent 70%)',
         }}
       />
       <div
@@ -127,7 +127,7 @@ const WhyChooseUs = () => {
             <div
               className="absolute bottom-0 left-0 w-28 h-1 pointer-events-none"
               style={{
-                background: 'linear-gradient(90deg, #3b82f6, transparent)',
+                background: 'linear-gradient(90deg, #F18E32, transparent)',
               }}
             />
 
@@ -141,12 +141,12 @@ const WhyChooseUs = () => {
               <div
                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded-none"
                 style={{
-                  background: 'rgba(59,130,246,0.12)',
-                  border: '1px solid rgba(59,130,246,0.25)',
+                  background: 'rgba(241,142,50,0.12)',
+                  border: '1px solid rgba(241,142,50,0.25)',
                 }}
               >
-                <FiZap className="text-blue-400 text-[10px]" />
-                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-400">
+                <FiZap className="text-[#F18E32] text-[10px]" />
+                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#F18E32]">
                   {currentLang === 'bn' ? 'আমাদের বৈশিষ্ট্য' : 'WHY CHOOSE US'}
                 </span>
               </div>
@@ -173,7 +173,7 @@ const WhyChooseUs = () => {
               <div
                 className="w-14 h-[3px] mb-5"
                 style={{
-                  background: 'linear-gradient(90deg, #3b82f6, #06b6d4)',
+                  background: 'linear-gradient(90deg, #F18E32, #fca5a5)',
                 }}
               />
               <p

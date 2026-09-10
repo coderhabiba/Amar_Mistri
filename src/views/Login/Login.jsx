@@ -71,6 +71,7 @@ const Login = () => {
     // ── MISTRI ROLE VALIDATION ──
     if (loginRole === 'mistri') {
       const isEmail = identifierTrimmed.includes('@');
+      const isMistriId = /^AM-\d+$/i.test(identifierTrimmed);
       if (isEmail && !emailRegex.test(identifierTrimmed)) {
         toast.error(
           currentLang === 'bn'
@@ -79,11 +80,11 @@ const Login = () => {
         );
         return;
       }
-      if (!isEmail && !bdPhoneRegex.test(identifierTrimmed)) {
+      if (!isEmail && !isMistriId && !bdPhoneRegex.test(identifierTrimmed)) {
         toast.error(
           currentLang === 'bn'
-            ? 'সঠিক ১১ ডিজিটের মোবাইল নম্বর দিন!'
-            : 'Enter a valid 11-digit mobile number!',
+            ? 'সঠিক মোবাইল নম্বর বা মিস্ত্রি আইডি (যেমন: AM-001) দিন!'
+            : 'Enter a valid mobile number or Mistry ID (e.g. AM-001)!',
         );
         return;
       }
@@ -125,12 +126,12 @@ const Login = () => {
         localStorage.setItem('token', response.data.token);
         localStorage.setItem('userRole', loginRole);
         localStorage.setItem('mistri', JSON.stringify(response.data.mistri));
+        localStorage.setItem('user', JSON.stringify(response.data.mistri));
 
-        
         if (loginRole === 'admin') {
           navigate('/dashboard/admin');
         } else {
-          navigate('/dashboard');
+          navigate('/dashboard/mistri');
         }
       }
     } catch (error) {
@@ -162,7 +163,7 @@ const Login = () => {
     setIsSendingReset(true);
 
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/forgot-password`, {
+      const response = await axios.post(`${API_BASE_URL}/forgot-password`, {
         email: emailTrimmed,
         role: loginRole,
       });
@@ -196,7 +197,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        `${API_BASE_URL}/api/forgot-password/verify-otp`,
+        `${API_BASE_URL}/forgot-password/verify-otp`,
         {
           email: forgotEmail.trim(),
           otp: otpTrimmed,
@@ -232,7 +233,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        `${API_BASE_URL}/api/forgot-password/reset-password`,
+        `${API_BASE_URL}/forgot-password/reset-password`,
         {
           email: forgotEmail.trim(),
           otp: otpCode.trim(),

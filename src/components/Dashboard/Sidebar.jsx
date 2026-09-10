@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from 'react-router';
 import { useTranslation } from 'react-i18next';
+import { useState, useEffect } from 'react';
 import {
   FiGrid,
   FiUser,
@@ -17,15 +18,35 @@ const Sidebar = () => {
   const { i18n } = useTranslation();
   const currentLang = i18n.language === 'bn' ? 'bn' : 'en';
 
-  const userSession = {
-    name: 'Habibur Rahman',
+  const [userSession, setUserSession] = useState({
+    name: 'User',
     role: 'mistri',
-    avatar:
-      'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=60',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=60',
     isVerified: true,
-  };
+  });
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem('mistri') || localStorage.getItem('user');
+    const storedRole = localStorage.getItem('userRole') || 'mistri';
+    if (storedUser) {
+      try {
+        const u = JSON.parse(storedUser);
+        setUserSession({
+          name: u.fullName || u.name || 'User',
+          role: u.role || storedRole,
+          avatar: u.photo || u.faceImageUrl || u.avatar || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=60',
+          isVerified: u.status === 'approved' || u.isNidVerified || true,
+        });
+      } catch (e) {}
+    }
+  }, []);
 
   const handleLogout = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('userRole');
+    localStorage.removeItem('mistri');
+    localStorage.removeItem('user');
+    sessionStorage.clear();
     navigate('/login');
   };
 

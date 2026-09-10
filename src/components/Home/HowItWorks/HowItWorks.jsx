@@ -138,17 +138,17 @@ const HowItWorks = () => {
           <div
             className="inline-flex items-center gap-2 px-3.5 py-1.5 mb-5"
             style={{
-              background: `${accent.iconBg}`,
-              border: `1px solid ${accent.iconBorder}`,
+              background: `rgba(241,142,50,0.15)`,
+              border: `1px solid rgba(241,142,50,0.35)`,
             }}
           >
             <span
               className="w-1.5 h-1.5 rounded-full animate-pulse"
-              style={{ background: accent.hex }}
+              style={{ background: '#F18E32' }}
             />
             <span
               className="text-[10px] font-black uppercase tracking-[0.22em]"
-              style={{ color: accent.hex }}
+              style={{ color: '#F18E32' }}
             >
               {isBn ? 'সহজ প্রক্রিয়া' : 'EASY STEPS'}
             </span>
@@ -164,13 +164,13 @@ const HowItWorks = () => {
                 <>
                   ৩টি সহজ ধাপে
                   <br />
-                  <span style={{ color: accent.hex }}>সেবা নিন</span>
+                  <span style={{ color: '#F18E32' }}>সেবা নিন</span>
                 </>
               ) : (
                 <>
                   How It
                   <br />
-                  <span style={{ color: accent.hex }}>Works</span>
+                  <span style={{ color: '#F18E32' }}>Works</span>
                 </>
               )}
             </h2>
