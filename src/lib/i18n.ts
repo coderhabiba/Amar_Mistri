@@ -18,7 +18,7 @@ if (!i18n.isInitialized) {
       fallbackLng: 'bn',
       interpolation: { escapeValue: false },
       detection: {
-        order: ['localStorage', 'navigator'],
+        order: ['localStorage'],
         caches: ['localStorage'],
       },
     });
