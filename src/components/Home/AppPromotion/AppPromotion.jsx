@@ -66,7 +66,7 @@ const AppPromotion = () => {
             {features.map((f, i) => (
               <div
                 key={i}
-                className="flex items-center gap-2.5 text-xs md:text-sm font-semibold text-slate-30 px-4 py-2 rounded-2xl shadow-sm transition-all duration-300"
+                className="flex items-center gap-2.5 text-xs md:text-sm font-semibold text-slate-30 px-4 py-2 rounded-3xl shadow-sm transition-all duration-300"
               >
                 <FiCheckCircle className="text-yellow-500 w-4 h-4 flex-shrink-0" />
                 <span>{currentLang === 'bn' ? f.bn : f.en}</span>
@@ -78,22 +78,22 @@ const AppPromotion = () => {
           <div className="flex flex-wrap justify-center gap-4 pt-6">
             <a
               href="#playstore"
-              className="transform transition-all duration-300 hover:scale-105 active:scale-98 hover:shadow-xl hover:shadow-yellow-500/5 rounded-xl overflow-hidden"
+              className="transform transition-all duration-300 hover:scale-105 active:scale-98 hover:shadow-xl hover:shadow-yellow-500/5 rounded-3xl overflow-hidden"
             >
               <img
                 src="https://i.ibb.co.com/RGdQqkb8/play-store-badge.jpg"
                 alt="Google Play"
-                className="h-12 w-auto object-contain rounded-xl border border-slate-800"
+                className="h-12 w-auto object-contain rounded-3xl border border-slate-800"
               />
             </a>
             <a
               href="#appstore"
-              className="transform transition-all duration-300 hover:scale-105 active:scale-98 hover:shadow-xl hover:shadow-orange-500/5 rounded-xl overflow-hidden"
+              className="transform transition-all duration-300 hover:scale-105 active:scale-98 hover:shadow-xl hover:shadow-orange-500/5 rounded-3xl overflow-hidden"
             >
               <img
                 src="https://i.ibb.co.com/QvsbhNdL/app-store-badge.jpg"
                 alt="App Store"
-                className="h-12 w-auto object-contain rounded-xl border border-slate-800"
+                className="h-12 w-auto object-contain rounded-3xl border border-slate-800"
               />
             </a>
           </div>

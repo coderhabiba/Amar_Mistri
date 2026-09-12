@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
 
     const db = await getDB();
     const collectionName = role === 'mistri' ? 'mechanics' : 'users';
-    const user: any = await db.collection(collectionName).findOne({ email: email.toLowerCase().trim() });
+    const user: any = await db.collection(collectionName).findOne({ email: { $regex: new RegExp(`^${email.trim()}$`, 'i') } });
 
     if (!user) {
       return NextResponse.json(
@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
     const otpExpires = new Date(Date.now() + 10 * 60 * 1000);
 
     await db.collection(collectionName).updateOne(
-      { email: email.toLowerCase().trim() },
+      { email: { $regex: new RegExp(`^${email.trim()}$`, 'i') } },
       {
         $set: {
           resetPasswordToken: otpCode,

@@ -138,7 +138,7 @@ const SearchAndCategory = () => {
         <div ref={dropdownRef} className="w-full relative max-w-2xl z-40">
           <form
             onSubmit={handleSearchSubmit}
-            className="flex items-center bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-2xl shadow-2xl transition-all p-1 overflow-hidden group"
+            className="flex items-center bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-3xl shadow-2xl transition-all p-1 overflow-hidden group"
           >
             <div className="flex-1 flex items-center bg-transparent px-4">
               <FiSearch className="text-slate-500 text-xl flex-shrink-0 group-hover:text-amber-500 transition-colors" />
@@ -164,7 +164,7 @@ const SearchAndCategory = () => {
                     setSearchQuery('');
                     setFilteredServices([]);
                   }}
-                  className="text-slate-500 hover:text-white transition-colors p-1 bg-slate-800/50 hover:bg-slate-800 rounded-lg"
+                  className="text-slate-500 hover:text-white transition-colors p-1 bg-slate-800/50 hover:bg-slate-800 rounded-2xl"
                 >
                   <FiX className="text-base" />
                 </button>
@@ -172,7 +172,7 @@ const SearchAndCategory = () => {
             </div>
             <button
               type="submit"
-              className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 font-black text-xs uppercase tracking-widest px-8 py-4 transition-all rounded-xl border-none shadow-lg shadow-orange-500/10 text-white"
+              className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 font-black text-xs uppercase tracking-widest px-8 py-4 transition-all rounded-full border-none shadow-lg shadow-orange-500/10 text-white"
             >
               {currentLang === 'bn' ? 'খুঁজুন' : 'Search'}
             </button>
@@ -186,7 +186,7 @@ const SearchAndCategory = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 10 }}
                 transition={{ duration: 0.2 }}
-                className="absolute top-[108%] left-0 w-full bg-slate-900/95 border border-slate-800/80 shadow-2xl max-h-72 overflow-y-auto rounded-2xl backdrop-blur-xl p-2 space-y-1 scrollbar-thin scrollbar-thumb-slate-800"
+                className="absolute top-[108%] left-0 w-full bg-slate-900/95 border border-slate-800/80 shadow-2xl max-h-72 overflow-y-auto rounded-3xl backdrop-blur-xl p-2 space-y-1 scrollbar-thin scrollbar-thumb-slate-800"
               >
                 {isLoading ? (
                   <div className="flex items-center justify-center py-8 gap-3 text-slate-400 text-sm font-semibold">
@@ -209,7 +209,7 @@ const SearchAndCategory = () => {
                           setSearchQuery('');
                           setIsOpen(false);
                         }}
-                        className="flex items-center justify-between px-4 py-3 hover:bg-slate-800/60 rounded-xl text-slate-300 hover:text-white transition-all group border border-transparent hover:border-slate-800"
+                        className="flex items-center justify-between px-4 py-3 hover:bg-slate-800/60 rounded-3xl text-slate-300 hover:text-white transition-all group border border-transparent hover:border-slate-800"
                       >
                         <div className="flex items-center gap-3.5">
                           <span className="text-slate-500 group-hover:text-amber-500 text-sm transition-colors">
@@ -222,7 +222,7 @@ const SearchAndCategory = () => {
                           </span>
                         </div>
                         {service.categoryName && (
-                          <span className="text-[10px] font-bold uppercase tracking-wider bg-slate-950 border border-slate-800 px-2.5 py-1 rounded-md text-slate-400">
+                          <span className="text-[10px] font-bold uppercase tracking-wider bg-slate-950 border border-slate-800 px-2.5 py-1 rounded-xl text-slate-400">
                             {service.categoryName}
                           </span>
                         )}
@@ -256,7 +256,7 @@ const SearchAndCategory = () => {
               <Link
                 key={category.id || idx}
                 to={`/mistries?categoryKey=${encodeURIComponent(category.categoryKey)}&specificService=${encodeURIComponent(category.id)}`}
-                className="flex flex-col items-center justify-center p-5 bg-slate-900/40 border border-slate-900 hover:border-amber-500/50 hover:bg-slate-900 rounded-2xl transition-all duration-300 text-center group active:scale-95 shadow-xl hover:shadow-amber-500/5"
+                className="flex flex-col items-center justify-center p-5 bg-slate-900/40 border border-slate-900 hover:border-amber-500/50 hover:bg-slate-900 rounded-3xl transition-all duration-300 text-center group active:scale-95 shadow-xl hover:shadow-amber-500/5"
               >
                 <div className="text-2xl text-slate-500 group-hover:text-amber-500 group-hover:scale-110 transition-all mb-3">
                   {category.icon}

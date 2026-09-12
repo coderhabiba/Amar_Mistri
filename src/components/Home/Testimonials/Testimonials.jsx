@@ -275,7 +275,7 @@ const Testimonials = () => {
               <button
                 key={i}
                 onClick={fn}
-                className="w-11 h-11 flex items-center justify-center border transition-all duration-200"
+                className="rounded-full w-11 h-11 flex items-center justify-center border transition-all duration-200"
                 style={{
                   borderColor: 'rgba(255,255,255,0.1)',
                   background: 'rgba(255,255,255,0.03)',
@@ -461,7 +461,7 @@ const Testimonials = () => {
                 key={i}
                 onClick={() => goTo(i, i > current ? 1 : -1)}
                 aria-label={`Review ${i + 1}`}
-                className="h-[2px] rounded-none transition-all duration-500 focus:outline-none"
+                className="h-[2px] rounded-full transition-all duration-500 focus:outline-none"
                 style={{
                   width: i === current ? 32 : 10,
                   background:
@@ -475,7 +475,7 @@ const Testimonials = () => {
           <div className="flex items-center gap-2 md:hidden">
             <button
               onClick={prev}
-              className="w-10 h-10 flex items-center justify-center border"
+              className="rounded-full w-10 h-10 flex items-center justify-center border"
               style={{
                 borderColor: 'rgba(255,255,255,0.1)',
                 background: 'rgba(255,255,255,0.03)',
@@ -486,7 +486,7 @@ const Testimonials = () => {
             </button>
             <button
               onClick={next}
-              className="w-10 h-10 flex items-center justify-center"
+              className="rounded-full w-10 h-10 flex items-center justify-center"
               style={{ background: '#F97316', color: '#fff' }}
             >
               <FiChevronRight size={17} />

@@ -166,7 +166,7 @@ const Banner = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => handlePrimaryClick(activeBanner.actionType)}
-                className="flex items-center justify-between bg-gradient-to-r from-yellow-500 to-orange-600 hover:from-yellow-600 hover:to-orange-700 text-white text-base font-bold px-7 py-4 transition-all duration-300 group rounded-2xl w-full sm:w-60"
+                className="flex items-center justify-between bg-gradient-to-r from-yellow-500 to-orange-600 hover:from-yellow-600 hover:to-orange-700 text-white text-base font-bold px-7 py-4 transition-all duration-300 group rounded-3xl w-full sm:w-60"
               >
                 <div className="flex items-center gap-3">
                   {activeBanner.actionType === 'join' ? (
@@ -187,7 +187,7 @@ const Banner = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 href="#download-section"
-                className="flex items-center justify-between bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white text-base font-bold px-7 py-4 transition-all duration-300 group rounded-2xl w-full sm:w-60"
+                className="flex items-center justify-between bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white text-base font-bold px-7 py-4 transition-all duration-300 group rounded-3xl w-full sm:w-60"
               >
                 <div className="flex items-center gap-3">
                   <MdPhoneAndroid className="w-5 h-5 text-yellow-400" />

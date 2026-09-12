@@ -139,7 +139,7 @@ const WhyChooseUs = () => {
             <div className="space-y-5 relative z-10">
               {/* Badge pill */}
               <div
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-none"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full"
                 style={{
                   background: 'rgba(241,142,50,0.12)',
                   border: '1px solid rgba(241,142,50,0.25)',

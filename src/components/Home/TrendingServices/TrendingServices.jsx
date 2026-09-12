@@ -127,11 +127,11 @@ const TrendingServices = () => {
             <motion.div
               key={service.id}
               variants={itemVariants}
-              className={`p-6 md:p-8 border rounded-2xl shadow-2xl/10 flex flex-col justify-between relative overflow-hidden select-none cursor-default ${service.gridClass}`}
+              className={`p-6 md:p-8 border rounded-3xl shadow-2xl/10 flex flex-col justify-between relative overflow-hidden select-none cursor-default ${service.gridClass}`}
             >
               {/* Upper Section: Vector Node Display */}
               <div className="flex items-start justify-between relative z-10">
-                <div className="p-2 bg-slate-950/40 rounded-xl border border-slate-800/40">
+                <div className="p-2 bg-slate-950/40 rounded-3xl border border-slate-800/40">
                   {service.icon}
                 </div>
                 <span className="font-mono text-[10px] text-slate-600 font-bold tracking-widest">

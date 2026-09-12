@@ -64,7 +64,7 @@ export async function POST(request: NextRequest) {
     const identifierUpper = identifier.trim().toUpperCase();
     const mistriData: any = await db.collection(targetCollection).findOne({
       $or: [
-        { email: identifier.toLowerCase().trim() },
+        { email: { $regex: new RegExp(`^${identifier.trim()}$`, 'i') } },
         { phone: identifier.trim() },
         { mistriId: identifierUpper },
         { referCode: identifierUpper },

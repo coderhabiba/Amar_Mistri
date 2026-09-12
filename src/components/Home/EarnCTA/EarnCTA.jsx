@@ -121,7 +121,7 @@ const EarnCTA = () => {
         <div className="flex-1 min-w-0 flex flex-col items-start">
           {/* Badge indicator node */}
           <div
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 mb-8 text-[10px] font-bold uppercase tracking-[0.2em]"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 mb-8 text-[10px] font-bold uppercase tracking-[0.2em] rounded-full"
             style={{
               background: 'rgba(249,115,22,0.08)',
               border: '1px solid rgba(249,115,22,0.25)',
@@ -174,7 +174,7 @@ const EarnCTA = () => {
           {/* Action trigger button */}
           <button
             onClick={() => navigate('/join-mistry')}
-            className="group relative inline-flex items-center gap-3 text-white text-sm font-bold px-8 py-4 transition-all duration-200 active:scale-[0.97] overflow-hidden"
+            className="group relative inline-flex items-center gap-3 text-white text-sm font-bold px-8 py-4 transition-all duration-200 active:scale-[0.97] overflow-hidden rounded-full"
             style={{ background: '#F97316' }}
             onMouseEnter={e => {
               e.currentTarget.style.background = '#ea6c0a';

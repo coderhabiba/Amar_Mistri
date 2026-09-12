@@ -133,7 +133,7 @@ export async function POST(request: NextRequest) {
       referredBy: referredBy || null,
       fullName: name,
       phone,
-      email: email || '',
+      email: email ? email.toLowerCase().trim() : '',
       password,
       categories: Array.isArray(categories) ? categories : [],
       services: Array.isArray(services) ? services : [],

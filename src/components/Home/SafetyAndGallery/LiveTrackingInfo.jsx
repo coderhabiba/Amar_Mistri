@@ -48,9 +48,9 @@ const LiveTrackingInfo = ({ isBn }) => {
         {systems.map((s, idx) => (
           <div
             key={idx}
-            className="flex gap-4 items-start p-4 bg-slate-950/40 border border-slate-900 rounded-2xl"
+            className="flex gap-4 items-start p-4 bg-slate-950/40 border border-slate-900 rounded-3xl"
           >
-            <div className="p-2 bg-slate-950 rounded-lg border border-slate-800 text-lg flex-shrink-0 mt-0.5">
+            <div className="p-2 bg-slate-950 rounded-2xl border border-slate-800 text-lg flex-shrink-0 mt-0.5">
               {s.icon}
             </div>
             <div className="space-y-1">

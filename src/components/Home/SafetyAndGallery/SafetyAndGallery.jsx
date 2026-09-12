@@ -130,7 +130,7 @@ const SafetyAndGallery = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
               transition={{ duration: 0.5, delay: idx * 0.08 }}
-              className="group relative border border-slate-900 rounded-2xl overflow-hidden p-6 md:p-8 flex flex-col justify-between shadow-2xl/10"
+              className="group relative border border-slate-900 rounded-3xl overflow-hidden p-6 md:p-8 flex flex-col justify-between shadow-2xl/10"
             >
               {/* Dynamic Image Canvas Layer with Gradient Overlays */}
               <div className="absolute inset-0 z-0 overflow-hidden">
